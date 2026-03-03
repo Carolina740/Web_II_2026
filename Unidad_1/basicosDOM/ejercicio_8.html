@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 8 USO DE STYLE</title>
+</head>
+<body>
+    <p>uno</p>
+    <p>dos</p>
+    <p>tres</p>
+    <p>cuatro</p>
+    <script>
+        const elementos = document.querySelectorAll('p')
+        elementos.forEach((elemento)=>{
+            elemento.style="color:white"
+            elemento.style.fontFamily="Sofia"
+            elemento.style.backgroundColor='blue'     
+        });
+    </script>
+</body>
+</html>
