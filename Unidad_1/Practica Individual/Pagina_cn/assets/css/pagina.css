@@ -1,0 +1,107 @@
+.pagina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #00D9FF;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a0a2e 50%, #0a0e27 100%);
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pagina::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(0, 217, 255, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.pagina__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 8vw, 4rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #39FF14;
+    text-shadow: 0 0 20px #39FF14, 0 0 40px #00D9FF;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    animation: neon-pulse 2s ease-in-out infinite;
+}
+
+@keyframes neon-pulse {
+    0%, 100% { text-shadow: 0 0 20px #39FF14, 0 0 40px #00D9FF; }
+    50% { text-shadow: 0 0 30px #39FF14, 0 0 60px #00D9FF, 0 0 80px #FF10F0; }
+}
+
+.pagina__desc{
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 auto 2.5rem;
+    color: #FF10F0;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.pagina__boton{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+    padding: 1rem 2rem;
+    border: 3px solid #00D9FF;
+    border-radius: 50px;
+    color: #00D9FF;
+    background: transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.pagina__boton:hover{
+    background: #00D9FF;
+    color: #0a0e27;
+    box-shadow: 0 0 30px #00D9FF, inset 0 0 20px rgba(255, 16, 240, 0.3);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px){
+    .pagina{
+        padding-top: 6rem;
+    }
+    .pagina__boton{
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media screen and (min-width: 750px){
+    .pagina{
+        background-image: url('../img/port1.jpg');
+        background-size: cover;
+        background-position: center;
+        padding-top: 8rem;
+    }
+    .pagina::before{
+        background: radial-gradient(circle at center, rgba(0, 217, 255, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+    }
+}

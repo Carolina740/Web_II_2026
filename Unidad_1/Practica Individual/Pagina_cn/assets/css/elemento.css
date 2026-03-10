@@ -1,0 +1,462 @@
+.elemento{
+    display: flex;
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+    padding: 2rem 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.elemento__titulo{
+    color: #39FF14;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 0 20px #39FF14, 0 0 40px #00D9FF;
+    letter-spacing: 2px;
+}
+
+.elemento__figura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.elemento__figura--imagen{
+    width: 90%;
+    max-width: 600px;
+    border: 3px solid #00D9FF;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+    transition: all 0.3s ease;
+    object-fit: cover;
+}
+
+.elemento__figura--imagen:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(0, 217, 255, 0.8), inset 0 0 20px rgba(57, 255, 20, 0.3);
+}
+
+.elemento__figura--texto{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: #FF10F0;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #FF10F0;
+}
+
+.elemento__boton{
+    font-family: 'Montserrat', sans-serif;
+    color: #00D9FF;
+    border: 3px solid #00D9FF;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background: transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
+}
+
+.elemento__boton:hover{
+    background: #00D9FF;
+    color: #1a1a2e;
+    box-shadow: 0 0 30px #00D9FF, inset 0 0 20px rgba(255, 16, 240, 0.3);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px){
+    .elemento{
+        padding: 1.5rem 1rem;
+    }
+    .elemento__figura--imagen{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .elemento__titulo{
+        font-size: 1.3rem;
+    }
+    .elemento__figura--texto{
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== SECCIÓN NOSOTROS ===== */
+.nosotros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+    flex-wrap: wrap;
+}
+
+.nosotros__conteiner{
+    flex: 1;
+    min-width: 280px;
+}
+
+.nosotros__contenido{
+    padding: 2rem;
+    background: rgba(0, 217, 255, 0.05);
+    border-left: 5px solid #39FF14;
+    border-radius: 10px;
+}
+
+.nosotros__titulo{
+    color: #39FF14;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px #39FF14;
+    letter-spacing: 1px;
+}
+
+.nosotros__texto{
+    color: #00D9FF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.nosotros__imagen{
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid #00D9FF;
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.nosotros__imagen:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(0, 217, 255, 0.8), inset 0 0 20px rgba(57, 255, 20, 0.3);
+}
+
+@media screen and (max-width: 768px){
+    .nosotros{
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+    .nosotros__imagen{
+        max-width: 100%;
+    }
+}
+
+/* ===== SECCIÓN PRODUCTOS ===== */
+.producto{
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #0a0e27 100%);
+    min-height: 400px;
+}
+
+.producto__titulo{
+    color: #39FF14;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 20px #39FF14, 0 0 40px #00D9FF;
+    letter-spacing: 2px;
+}
+
+.producto__card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card{
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.1) 0%, rgba(57, 255, 20, 0.1) 100%);
+    border: 2px solid #00D9FF;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+}
+
+.card:hover{
+    border-color: #39FF14;
+    box-shadow: 0 0 40px rgba(57, 255, 20, 0.6), inset 0 0 20px rgba(0, 217, 255, 0.2);
+    transform: translateY(-10px);
+}
+
+.card__titulo{
+    color: #39FF14;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px #39FF14;
+}
+
+.card__contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card__precio{
+    color: #FF10F0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 15px #FF10F0;
+}
+
+.card__desc{
+    color: #00D9FF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.card__boton{
+    font-family: 'Montserrat', sans-serif;
+    color: #00D9FF;
+    border: 2px solid #00D9FF;
+    padding: 0.8rem 1.5rem;
+    background: transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+}
+
+.card__boton:hover{
+    background: #00D9FF;
+    color: #1a1a2e;
+    box-shadow: 0 0 25px #00D9FF, inset 0 0 15px rgba(255, 16, 240, 0.3);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px){
+    .producto{
+        padding: 2rem 1rem;
+    }
+    .producto__card{
+        gap: 1.5rem;
+    }
+    .card{
+        min-width: 90%;
+        max-width: 100%;
+    }
+}
+
+/* ===== SECCIÓN CONTACTO ===== */
+.contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #0a0e27 0%, #0f3460 100%);
+    flex-wrap: wrap;
+}
+
+.contacto__titulo{
+    flex-basis: 100%;
+    color: #39FF14;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 20px #39FF14, 0 0 40px #00D9FF;
+    letter-spacing: 2px;
+}
+
+.contacto__contenido{
+    flex: 1;
+    min-width: 280px;
+    padding: 2rem;
+    background: rgba(0, 217, 255, 0.05);
+    border: 2px solid #00D9FF;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+}
+
+.contacto__descripcion{
+    color: #00D9FF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.contacto__info{
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contacto__info-item{
+    padding: 1.5rem;
+    background: rgba(0, 217, 255, 0.05);
+    border: 2px solid #00D9FF;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.contacto__info-item:hover{
+    border-color: #39FF14;
+    box-shadow: 0 0 25px rgba(57, 255, 20, 0.5), inset 0 0 15px rgba(0, 217, 255, 0.2);
+}
+
+.contacto__info-titulo{
+    color: #39FF14;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px #39FF14;
+}
+
+.contacto__info-texto{
+    color: #00D9FF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.contacto img,
+.contacto__imagen{
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid #FF10F0;
+    box-shadow: 0 0 30px rgba(255, 16, 240, 0.5);
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.contacto img:hover,
+.contacto__imagen:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(255, 16, 240, 0.8), inset 0 0 20px rgba(0, 217, 255, 0.3);
+}
+
+@media screen and (max-width: 768px){
+    .contacto{
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+    .contacto img{
+        max-width: 100%;
+    }
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a0a2e 100%);
+    border-top: 3px solid #39FF14;
+    flex-wrap: wrap;
+    box-shadow: 0 -5px 20px rgba(57, 255, 20, 0.2);
+}
+
+.footer img{
+    height: 60px;
+    filter: drop-shadow(0 0 10px #39FF14);
+    transition: transform 0.3s ease;
+}
+
+.footer img:hover{
+    transform: scale(1.1);
+}
+
+.footer__nav{
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+}
+
+.footer__nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__link{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer__link a{
+    color: #00D9FF;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer__link a:hover{
+    color: #39FF14;
+    text-shadow: 0 0 10px #39FF14;
+}
+
+@media screen and (max-width: 768px){
+    .footer{
+        flex-direction: column;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    .footer__nav{
+        width: 100%;
+    }
+    .footer__nav ul{
+        gap: 0.5rem;
+    }
+    .footer__link a{
+        font-size: 0.75rem;
+    }
+}

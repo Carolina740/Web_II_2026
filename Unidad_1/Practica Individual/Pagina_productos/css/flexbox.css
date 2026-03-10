@@ -1,0 +1,88 @@
+.headerPrincipal .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.headerPrincipal-nav {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	gap: 10px;
+}
+
+.headerPrincipal-nav-link {
+	flex: 1;
+	min-width: 150px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenidoPrincipal-productos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	gap: 20px;
+}
+
+.contenidoPrincipal-productos-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 calc(100% - 20px);
+	min-width: 150px;
+}
+
+@media(min-width: 600px) {
+	.contenidoPrincipal-productos-link {
+		flex: 1 1 calc(50% - 20px);
+	}
+}
+
+@media(min-width: 1000px) {
+	.contenidoPrincipal-productos-link {
+		flex: 1 1 calc(25% - 20px);
+	}
+}
+
+.videoSobre .container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 30px;
+}
+
+.videoSobre-video {
+	flex: 1;
+	min-width: 300px;
+}
+
+.videoSobre-sobre {
+	flex: 1;
+	min-width: 300px;
+}
+
+.rodapePrincipal-navMap-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 30px;
+}
+
+.rodapePrincipal-patrocinadores-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.rodapePrincipal-patrocinadores-list li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} 
