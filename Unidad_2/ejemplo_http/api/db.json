@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "id": "2",
+      "titulo": "jrfj",
+      "descripcion": "gjgk",
+      "fecha": "2026-03-24"
+    },
+    {
+      "id": "3",
+      "titulo": "jack",
+      "descripcion": "tortuga",
+      "fecha": "2026-02-23"
+    },
+    {
+      "id": "kFBfgrd5ENk",
+      "titulo": "HSRDH",
+      "descripcion": "DHDH",
+      "fecha": "2026-03-07"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
