@@ -58,6 +58,35 @@
             data-input-prioridad
             required
           />
+          <input
+          type="text"
+          name="responsable"
+          placeholder="Responsable"
+          class="inputForm"
+          autocomplete="off"
+          data-input-responsable
+          required
+        />
+        <input
+          type="text"
+          name="tag"
+          placeholder="Etiqueta"
+          class="inputForm"
+          autocomplete="off"
+          data-input-tag
+          required
+        />
+        <input
+          type="number"
+          name="progreso"
+          placeholder="Progreso %"
+          min="0"
+          max="100"
+          class="inputForm"
+          autocomplete="off"
+          data-input-progreso
+          required
+        />
           <button type="submit" class="btnCreate">
             Agregar <i class="fas fa-plus-circle"></i>
           </button>
@@ -77,6 +106,9 @@
                 <th>Fecha</th>
                 <th>Prioridad</th>
                 <th>Acciones</th>
+                <th>Responsable</th>
+                <th>Etiqueta</th>
+
               </tr>
             </thead>
             <tbody>

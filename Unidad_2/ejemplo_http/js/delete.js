@@ -1,14 +1,15 @@
 const deleteData = () => {
-    const id = document.getElementById('postId').value;
-
-    if (!id) return alert("Escribe el ID que quieres borrar");
-
-    fetch(`${API_URL}/${id}`, {
-        method: "DELETE"
+    fetch(`${API_URL}/1`,{
+        method:"DELETE"
     })
-    .then(response => {
-        if (!response.ok) throw new Error("ID no encontrado");
-        showResult({ message: `Post con id ${id} eliminado con éxito` });
+    .then(response =>{
+        if(!response.ok){
+            throw new Error(`Http error estado: ${response.status}`);
+        }
+        showResult({
+            message:"Post con el id 1 eliminado",
+            status: response.status
+        });
     })
-    .catch(error => showResult(error.message, true));
+    .catch(error =>(error.message,true));  
 }

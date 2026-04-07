@@ -2,21 +2,21 @@
   "posts": [
     {
       "id": "2",
-      "titulo": "jrfj",
-      "descripcion": "gjgk",
-      "fecha": "2026-03-24"
+      "titulo": "Nuevo Post Creado",
+      "descripcion": "Econtenido ",
+      "fecha": "2025-03-27"
     },
     {
-      "id": "3",
-      "titulo": "jack",
-      "descripcion": "tortuga",
-      "fecha": "2026-02-23"
+      "titulo": "nevo post",
+      "descripcion": "es un nuevo post creado",
+      "fecha": "2026-04-06T13:37:48.359Z",
+      "id": "Wab9eF4SV6E"
     },
     {
-      "id": "kFBfgrd5ENk",
-      "titulo": "HSRDH",
-      "descripcion": "DHDH",
-      "fecha": "2026-03-07"
+      "titulo": "nevo post",
+      "descripcion": "es un nuevo post creado",
+      "fecha": "2026-04-07T00:01:01.889Z",
+      "id": "B8VKr_9Nraw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

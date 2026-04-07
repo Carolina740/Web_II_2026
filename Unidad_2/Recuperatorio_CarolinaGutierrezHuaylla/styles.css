@@ -150,3 +150,23 @@
     background-color: #dc3545;
     color: #fff;
   }
+  .completed {
+    background-color: #d4edda !important;
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+
+  .taskCard {
+    border-left: 5px solid #5d34ec; 
+    transition: transform 0.2s;
+  }
+
+  .taskCard:hover {
+    transform: scale(1.02);
+  }
+
+  .actions button {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+  }

@@ -5,37 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD Local Server</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap" rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <main>
     <div class="container">
-        <header>
+        <header> 
             <h1>CRUD Local Server</h1>
         </header>
+ 
+        <div class="controls">
+            <button class="btn btn-get" onclick="getData()">Obtener Posts (GET)</button>
+            <button class="btn btn-post" onclick="postData()">Crear Post (POST)</button>
+            <button class="btn btn-put" onclick="putData()">Actualizar Post 1 (PUT)</button>
+            <button class="btn btn-delete" onclick="deleteData()">Eliminar Post 1 (DELETE)</button>
+        </div>
 
-    
-        <div class="form-container">
-        <h3>Datos del Post</h3>
-        <input type="number" id="postId" placeholder="ID (para Actualizar/Eliminar)">
-        <input type="text" id="postTitulo" placeholder="Título">
-        <textarea id="postDescripcion" placeholder="Descripción"></textarea>
-        <input type="date" id="postFecha"> </div>
-
-    <div class="controls-grid">
-        <button class="btn btn-get" onclick="getData()">OBTENER POSTS (GET)</button>
-        <button class="btn btn-post" onclick="postData()">CREAR POST (POST)</button>
-        <button class="btn btn-put" onclick="putData()">ACTUALIZAR POR ID (PUT)</button>
-        <button class="btn btn-delete" onclick="deleteData()">ELIMINAR POR ID (DELETE)</button>
-    </div>
-
-    <div class="results">
-        <h3>Resultados:</h3>
-        <div id="status"></div>
-        <pre id="result">RESULTADO..</pre>
-    </div>
+        <div class="results">
+            <h3>Resultados:</h3>
+            <div id="status"></div>
+            <pre id="result">RESULTADO..</pre>
+        </div>
     </div>
 
     <script src="js/get.js"></script>
