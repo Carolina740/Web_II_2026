@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Doguito Petshop | Registrar Producto</title>
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/header.css">
+    <link rel="stylesheet" href="../assets/css/componentes/card.css">
+    <link rel="stylesheet" href="../assets/css/register_client.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../assets/css/componentes/button.css">
+</head>
+<body>
+    <header class="header container">
+        <img src="../assets/img/doguitoadm.svg" alt="Logo Doguito" class="header__logo">
+        <nav>
+          <ul class="header__list-nav">
+            <li class="header__link"><a href="#">Dashboard</a></li>
+            <li class="header__link">
+              <a href="./lista_productos.html">Productos</a>
+            </li>
+            <li class="header__link">
+              <a href="./lista_cliente.html">Clientes </a>
+            </li>
+            <li class="header__link">
+              <a href="./lista_pets.html">Pets</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--center flex--column">
+        <section class="card cadastro">
+            <h1 class="card__title">Registrar Producto</h1>
+            <form class="flex flex--column" data-form-product>
+              <div class="input-container">
+                <input name="nombre" id="nombre" class="input" type="text" placeholder="Nombre del producto" required data-nombre />
+                <label class="input-label" for="nombre">Nombre</label>
+              </div>
+              <div class="input-container">
+                <input name="precio" id="precio" class="input" type="text" placeholder="Precio" required data-precio />
+                <label class="input-label" for="precio">Precio</label>
+              </div>
+              <div class="textarea-container">
+                <textarea name="descripcion" id="descripcion" class="textarea" placeholder="Descripción del producto" data-descripcion></textarea>
+                <label class="textarea-label" for="descripcion">Descripción</label>
+              </div>
+              <button type="submit" class="button">Registrar Producto</button> 
+            </form>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+    <script type="module" src="../controllers/registro_producto_controller.js"></script>
+</body>
+</html>
