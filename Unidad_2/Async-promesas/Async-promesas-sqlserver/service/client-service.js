@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost/api/clientes.php';
+const API_BASE_URL = 'http://localhost:3000/api/clientes';
 
 // Import uuid for better unique IDs
 import { v4 as uuid } from 'https://cdn.skypack.dev/uuid';

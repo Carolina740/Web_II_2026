@@ -1,7 +1,7 @@
 import { v4 as uuid } from 'https://cdn.skypack.dev/uuid';
 
-const API_BASE_URL = 'http://localhost/api/mascotas_fixed.php';
-const API_CLIENTES_URL = 'http://localhost/api/clientes.php';
+const API_BASE_URL = 'http://localhost:3000/api/mascotas';
+const API_CLIENTES_URL = 'http://localhost:3000/api/clientes';
 
 const listaMascotas = () => {
     return fetch(API_BASE_URL).then(response => {

@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'https://cdn.skypack.dev/uuid';
 
-const API_BASE_URL = 'http://localhost/api/productos_fixed.php';
+const API_BASE_URL = 'http://localhost:3000/api/productos';
 
 const listaProductos = () => {
     return fetch(API_BASE_URL).then(response => {

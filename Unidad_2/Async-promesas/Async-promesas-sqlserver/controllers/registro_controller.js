@@ -23,15 +23,9 @@ formulario.addEventListener("submit", async (evento) => {
         const respuesta = await clientService.crearCliente(nombre, email);
         console.log("Cliente guardado:", respuesta);
         
-        if (respuesta.success) {
-            alert('¡Cliente registrado exitosamente!');
-            formulario.reset();
-            setTimeout(() => {
-                window.location.href = "./registro_completado.html";
-            }, 1000);
-        } else {
-            alert('Error: ' + (respuesta.error || 'No se pudo guardar el cliente'));
-        }
+        alert('¡Cliente registrado exitosamente!');
+        formulario.reset();
+        window.location.href = "./registro_completado.html";
     } catch (error) {
         console.error('Error al guardar cliente:', error);
         alert('Error al guardar cliente: ' + error.message);
