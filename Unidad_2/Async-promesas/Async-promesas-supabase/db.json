@@ -1,0 +1,34 @@
+{
+  "clientes": [
+    {
+      "nombre": "FULANITO",
+      "email": "fulanito@univalle.com",
+      "id": "1"
+    }
+  ],
+  "productos": [
+    {
+      "nombre": "Alimento Premium Perro",
+      "precio": "45.50",
+      "descripcion": "Bolsa de 10kg con vitaminas y minerales.",
+      "id": "1"
+    },
+    {
+      "nombre": "alimento de pescado",
+      "precio": "70",
+      "descripcion": "fl",
+      "id": "3w5l0_M0fNA"
+    }
+  ],
+  "mascotas": [
+    {
+      "nombre": "MAX",
+      "edad": "3",
+      "raza": "Golden Retriever",
+      "peso": "25",
+      "dueñoId": "1",
+      "id": "m1a2b3"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
