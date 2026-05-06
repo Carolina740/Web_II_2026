@@ -1,0 +1,66 @@
+{
+  "perfil": [
+    {
+      "id": "1",
+      "nombre": "Juan Pérez",
+      "email": "juan@email.com"
+    },
+    {
+      "id": "3",
+      "nombre": "Carlos López",
+      "email": "carlos@email.com"
+    }
+  ],
+  "mascotas": [
+    {
+      "id": "1",
+      "nombre": "Firulais",
+      "raza": "Labrador",
+      "edad": 3,
+      "peso": 25,
+      "dueñoId": "1"
+    },
+    {
+      "id": "2",
+      "nombre": "Luna",
+      "raza": "Pastor Alemán",
+      "edad": 2,
+      "peso": 30,
+      "dueñoId": "2"
+    },
+    {
+      "id": "3",
+      "nombre": "Max",
+      "raza": "Golden Retriever",
+      "edad": 4,
+      "peso": 28,
+      "dueñoId": "1"
+    },
+    {
+      "id": "Zo7AuA19wbU",
+      "nombre": "goku",
+      "raza": "panda",
+      "edad": "2",
+      "peso": "34",
+      "dueñoId": "1"
+    }
+  ],
+  "productos": [
+    {
+      "id": "2",
+      "nombre": "Juguete mordedor",
+      "precio": 75
+    },
+    {
+      "id": "3",
+      "nombre": "Cama para mascotas",
+      "precio": 350
+    },
+    {
+      "id": "5",
+      "nombre": "Plato de comida",
+      "precio": 30
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
